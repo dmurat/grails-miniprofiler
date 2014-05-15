@@ -96,7 +96,7 @@ database and other performance problems.
 		}
 
 		// replace data sources with our proxying one, if it's there
-      List<String> dataSourceBeanNames = springConfig.getBeanNames().findAll { it.startsWith("dataSource") && it.indexOf("Unproxied") == -1}
+      List<String> dataSourceBeanNames = springConfig.getBeanNames().findAll { it == "dataSource" || it.startsWith("dataSource_") }
       dataSourceBeanNames.each { String dataSourceBeanName ->
         BeanConfiguration dataSourceConfiguration = springConfig.getBeanConfig(dataSourceBeanName)
         if (dataSourceConfiguration) {
