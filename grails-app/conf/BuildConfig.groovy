@@ -14,11 +14,11 @@ grails.project.dependency.resolution = {
         mavenCentral()
         mavenLocal()
 
-		if(System.getenv("MINIPROFILER_CI") == 'true' && appVersion.endsWith("-SNAPSHOT")) {
-			println "Using Sonatype OSS snapshot repository. If you are reading this anywhere other than the miniprofiler plugin travis CI build, something probably went wrong"
-			// here to allow testing against snapshot miniprofiler code
-			mavenRepo 'https://oss.sonatype.org/content/repositories/snapshots'
-		}
+        if (System.getenv("MINIPROFILER_CI") == 'true' && appVersion.endsWith("-SNAPSHOT")) {
+            println "Using Sonatype OSS snapshot repository. If you are reading this anywhere other than the miniprofiler plugin travis CI build, something probably went wrong"
+            // here to allow testing against snapshot miniprofiler code
+            mavenRepo 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
     }
 
     dependencies {
@@ -31,8 +31,8 @@ grails.project.dependency.resolution = {
         }
 
         compile(':profiler:0.5') {
-			export = false
-		}
+            export = false
+        }
     }
 }
 
