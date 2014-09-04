@@ -24,6 +24,9 @@ class MiniprofilerGrailsPlugin {
     def description = '''\
 Shows timing and sql query information in a head-up display in a web page, useful for debugging
 database and other performance problems.
+
+Note: this is forked version of main development stream. For more details take a look at the end of grails-miniprofiler/README.md or at
+https://github.com/dmurat/grails-miniprofiler/tree/myModifications
 '''
     def documentation = "http://grails.org/plugin/miniprofiler"
 
