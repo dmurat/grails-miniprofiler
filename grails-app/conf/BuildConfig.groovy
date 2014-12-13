@@ -24,7 +24,7 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
-        compile "io.jdev.miniprofiler:miniprofiler-core:0.3.1"
+        compile "io.jdev.miniprofiler:miniprofiler-core:0.3.2-SNAPSHOT"
     }
 
     plugins {
